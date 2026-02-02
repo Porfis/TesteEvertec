@@ -19,6 +19,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TDMConexao, DMConexao);
   Application.CreateForm(TMain, Main);
-  Application.CreateForm(TFrmSobre, FrmSobre);
   Application.Run;
 end.
