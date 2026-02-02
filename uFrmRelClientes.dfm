@@ -201,7 +201,7 @@ object frmRelClientes: TfrmRelClientes
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 46054.181273680600000000
-    ReportOptions.LastChange = 46054.935518900460000000
+    ReportOptions.LastChange = 46055.456907847220000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'procedure GroupHeader1OnBeforePrint(Sender: TfrxComponent);'
@@ -502,30 +502,11 @@ object frmRelClientes: TfrmRelClientes
             '[dbClientes."Cep"]')
           ParentFont = False
         end
-        object Memo41: TfrxMemoView
-          AllowVectorExport = True
-          Left = 64.370129900000000000
-          Top = 25.456710000000000000
-          Width = 71.811069780000000000
-          Height = 18.897651670000000000
-          StretchMode = smActualHeight
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = []
-          Memo.UTF8W = (
-            'Endere'#231'o: ')
-          ParentFont = False
-        end
         object Memo42: TfrxMemoView
           AllowVectorExport = True
-          Left = 141.929190000000000000
-          Top = 25.456710000000000000
-          Width = 895.748609780000000000
+          Left = 65.338590000000000000
+          Top = 28.456710000000000000
+          Width = 975.118739780000000000
           Height = 18.897651670000000000
           OnBeforePrint = 'Memo42OnBeforePrint'
           StretchMode = smActualHeight
@@ -539,14 +520,21 @@ object frmRelClientes: TfrmRelClientes
           Frame.Typ = []
           Memo.UTF8W = (
             
-              '[dbClientes."Endereco"] - Bairro: [dbClientes."Bairro"] - Comple' +
-              'mento: [dbClientes."Complemento"]')
+              'Endere'#231'o: [dbClientes."Endereco"] - Bairro: [dbClientes."Bairro"' +
+              '] - Complemento: [dbClientes."Complemento"]')
           ParentFont = False
+          Formats = <
+            item
+            end
+            item
+            end
+            item
+            end>
         end
         object Memo47: TfrxMemoView
           AllowVectorExport = True
           Left = 7.559060000000000000
-          Top = -15.118120000000000000
+          Top = -16.118120000000000000
           Width = 1035.591220730000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -676,7 +664,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo32: TfrxMemoView
           AllowVectorExport = True
           Left = 964.000620000000000000
-          Top = 43.354361590000000000
+          Top = 51.354361590000000000
           Width = 79.370129780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -695,7 +683,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo28: TfrxMemoView
           AllowVectorExport = True
           Left = 7.779530100000000000
-          Top = 43.354361590000000000
+          Top = 51.354361590000000000
           Width = 49.133889780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -714,7 +702,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo29: TfrxMemoView
           AllowVectorExport = True
           Left = 64.590600000000000000
-          Top = 43.354361590000000000
+          Top = 51.354361590000000000
           Width = 56.692949780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -732,7 +720,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo30: TfrxMemoView
           AllowVectorExport = True
           Left = 327.527830000000000000
-          Top = 43.354361590000000000
+          Top = 51.354361590000000000
           Width = 86.929189780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -750,7 +738,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo43: TfrxMemoView
           AllowVectorExport = True
           Left = 443.252320000000000000
-          Top = 43.354361590000000000
+          Top = 51.354361590000000000
           Width = 105.826839780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -768,7 +756,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo44: TfrxMemoView
           AllowVectorExport = True
           Left = 554.961040000000000000
-          Top = 43.354361590000000000
+          Top = 51.354361590000000000
           Width = 219.212739780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -782,21 +770,6 @@ object frmRelClientes: TfrmRelClientes
           Memo.UTF8W = (
             'Email')
           ParentFont = False
-        end
-        object Memo45: TfrxMemoView
-          AllowVectorExport = True
-          Left = 7.559060000000000000
-          Top = 52.913420000000000000
-          Width = 1035.591220730000000000
-          Height = 18.897651670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Frame.Typ = []
-          Memo.UTF8W = (
-            
-              '________________________________________________________________' +
-              '________________________________________________________________' +
-              '______________')
         end
       end
       object GroupFooter1: TfrxGroupFooter
@@ -882,7 +855,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo2: TfrxMemoView
           AllowVectorExport = True
           Left = 7.559060100000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 49.133889780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -901,7 +874,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo3: TfrxMemoView
           AllowVectorExport = True
           Left = 64.370130000000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 56.692949780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -919,7 +892,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo4: TfrxMemoView
           AllowVectorExport = True
           Left = 327.307360000000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 86.929189780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -937,7 +910,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo5: TfrxMemoView
           AllowVectorExport = True
           Left = 443.031850000000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 105.826839780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -955,7 +928,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo6: TfrxMemoView
           AllowVectorExport = True
           Left = 554.740570000000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 219.212739780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -973,7 +946,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo23: TfrxMemoView
           AllowVectorExport = True
           Left = 782.362710000000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 151.181199780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -991,7 +964,7 @@ object frmRelClientes: TfrmRelClientes
         object Memo24: TfrxMemoView
           AllowVectorExport = True
           Left = 960.000620000000000000
-          Top = 3.779531590000000000
+          Top = 7.779531590000000000
           Width = 79.370129780000000000
           Height = 18.897651670000000000
           ContentScaleOptions.Constraints.MaxIterationValue = 0
@@ -1006,21 +979,6 @@ object frmRelClientes: TfrmRelClientes
           Memo.UTF8W = (
             'CEP')
           ParentFont = False
-        end
-        object Memo46: TfrxMemoView
-          AllowVectorExport = True
-          Left = 7.559060000000000000
-          Top = 11.338590000000000000
-          Width = 1035.591220730000000000
-          Height = 18.897651670000000000
-          ContentScaleOptions.Constraints.MaxIterationValue = 0
-          ContentScaleOptions.Constraints.MinIterationValue = 0
-          Frame.Typ = []
-          Memo.UTF8W = (
-            
-              '________________________________________________________________' +
-              '________________________________________________________________' +
-              '______________')
         end
       end
     end
