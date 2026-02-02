@@ -1,31 +1,31 @@
 inherited FrmCadClientes: TFrmCadClientes
   Caption = 'Cadastro de Clientes'
-  ClientHeight = 297
+  ClientHeight = 295
   ClientWidth = 684
-  Constraints.MinHeight = 257
+  Constraints.MinHeight = 314
   Constraints.MinWidth = 700
   StyleElements = [seFont, seClient, seBorder]
   OnDestroy = FormDestroy
   ExplicitWidth = 700
-  ExplicitHeight = 336
+  ExplicitHeight = 334
   TextHeight = 15
   inherited pnlTop: TPanel
-    Height = 297
+    Height = 295
     StyleElements = [seFont, seClient, seBorder]
     ExplicitHeight = 298
   end
   inherited pgPrincipal: TPageControl
     Width = 619
-    Height = 297
+    Height = 295
     ActivePage = tsCadastro
     ExplicitWidth = 619
     ExplicitHeight = 298
     inherited tsConsulta: TTabSheet
       ExplicitWidth = 611
-      ExplicitHeight = 267
+      ExplicitHeight = 265
       inherited grdConsulta: TDBGrid
         Width = 611
-        Height = 232
+        Height = 230
         Columns = <
           item
             Expanded = False
@@ -107,7 +107,7 @@ inherited FrmCadClientes: TFrmCadClientes
     end
     inherited tsCadastro: TTabSheet
       ExplicitWidth = 611
-      ExplicitHeight = 267
+      ExplicitHeight = 265
       object lblCodigo: TLabel
         Left = 20
         Top = 16
@@ -196,51 +196,50 @@ inherited FrmCadClientes: TFrmCadClientes
         Left = 3
         Top = 100
         Width = 605
-        Height = 141
+        Height = 136
         Anchors = [akLeft, akTop, akRight]
-        Caption = 'Endere'#231'o'
         TabOrder = 5
         DesignSize = (
           605
-          141)
+          136)
         object lblBairro: TLabel
           Left = 22
-          Top = 55
+          Top = 45
           Width = 37
           Height = 15
           Caption = 'Bairro: '
         end
         object lblComplemento: TLabel
           Left = 189
-          Top = 55
+          Top = 45
           Width = 80
           Height = 15
           Caption = 'Complemento:'
         end
         object lblEndereco: TLabel
           Left = 3
-          Top = 25
+          Top = 15
           Width = 55
           Height = 15
           Caption = 'Endere'#231'o: '
         end
         object lblCep: TLabel
           Left = 34
-          Top = 115
+          Top = 105
           Width = 24
           Height = 15
           Caption = 'CEP:'
         end
         object lblCidade: TLabel
           Left = 18
-          Top = 85
+          Top = 75
           Width = 40
           Height = 15
           Caption = 'Cidade:'
         end
         object lblFaixaCep: TLabel
           Left = 400
-          Top = 85
+          Top = 75
           Width = 204
           Height = 15
           Caption = 'Faixa de CEP: 00000000 a 99999999  '
@@ -253,7 +252,7 @@ inherited FrmCadClientes: TFrmCadClientes
         end
         object dbeBairro: TDBEdit
           Left = 63
-          Top = 51
+          Top = 41
           Width = 121
           Height = 23
           DataField = 'Bairro'
@@ -262,7 +261,7 @@ inherited FrmCadClientes: TFrmCadClientes
         end
         object dbeComplemento: TDBEdit
           Left = 274
-          Top = 51
+          Top = 41
           Width = 328
           Height = 23
           Anchors = [akLeft, akTop, akRight]
@@ -272,7 +271,7 @@ inherited FrmCadClientes: TFrmCadClientes
         end
         object dbeEndereco: TDBEdit
           Left = 63
-          Top = 21
+          Top = 11
           Width = 539
           Height = 23
           Anchors = [akLeft, akTop, akRight]
@@ -282,7 +281,7 @@ inherited FrmCadClientes: TFrmCadClientes
         end
         object dbeCep: TDBEdit
           Left = 63
-          Top = 112
+          Top = 102
           Width = 121
           Height = 23
           DataField = 'Cep'
@@ -292,7 +291,7 @@ inherited FrmCadClientes: TFrmCadClientes
         end
         object dlcCidade: TDBLookupComboBox
           Left = 63
-          Top = 81
+          Top = 71
           Width = 329
           Height = 23
           DataField = 'ID_Cidade'
