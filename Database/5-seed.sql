@@ -1,7 +1,7 @@
-USE TesteEvertec;
+USE TesteEvertecNew;
 GO
 
-INSERT INTO dbo.CIDADES (NOME, UF, CEP_Inicial, CEP_Final)
+INSERT INTO dbo.CIDADES (NOME, ESTADO, CEP_Inicial, CEP_Final)
 VALUES
 ('Tupã', 'SP', 17605000, 17805999),
 ('Bauru', 'SP', 17000000, 17099999),

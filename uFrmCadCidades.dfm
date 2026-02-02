@@ -221,7 +221,7 @@ inherited frmCadCidades: TfrmCadCidades
     end
     object qryDadosNome: TStringField
       FieldName = 'Nome'
-      Size = 100
+      Size = 50
     end
     object qryDadosEstado: TStringField
       FieldName = 'Estado'

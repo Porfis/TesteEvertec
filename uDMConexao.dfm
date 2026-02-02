@@ -5,7 +5,7 @@ object DMConexao: TDMConexao
   object ADOConnection: TADOConnection
     ConnectionString = 
       'Provider=SQLOLEDB;Data Source=localhost\SQLEXPRESS;Initial Catal' +
-      'og=TesteEvertec;Integrated Security=SSPI;'
+      'og=TesteEvertecNew;Integrated Security=SSPI;'
     LoginPrompt = False
     Provider = 'SQLOLEDB'
     Left = 40

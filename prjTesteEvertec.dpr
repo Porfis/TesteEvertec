@@ -18,7 +18,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TDMConexao, DMConexao);
   Application.CreateForm(TMain, Main);
-  Application.CreateForm(TfrmCadCidades, frmCadCidades);
-  Application.CreateForm(TfrmRelClientes, frmRelClientes);
   Application.Run;
 end.

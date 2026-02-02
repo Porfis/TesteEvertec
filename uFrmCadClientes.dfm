@@ -1,31 +1,31 @@
 inherited FrmCadClientes: TFrmCadClientes
   Caption = 'Cadastro de Clientes'
-  ClientHeight = 298
+  ClientHeight = 297
   ClientWidth = 684
   Constraints.MinHeight = 257
   Constraints.MinWidth = 700
   StyleElements = [seFont, seClient, seBorder]
   OnDestroy = FormDestroy
   ExplicitWidth = 700
-  ExplicitHeight = 337
+  ExplicitHeight = 336
   TextHeight = 15
   inherited pnlTop: TPanel
-    Height = 298
+    Height = 297
     StyleElements = [seFont, seClient, seBorder]
     ExplicitHeight = 298
   end
   inherited pgPrincipal: TPageControl
     Width = 619
-    Height = 298
+    Height = 297
     ActivePage = tsCadastro
     ExplicitWidth = 619
     ExplicitHeight = 298
     inherited tsConsulta: TTabSheet
       ExplicitWidth = 611
-      ExplicitHeight = 268
+      ExplicitHeight = 267
       inherited grdConsulta: TDBGrid
         Width = 611
-        Height = 233
+        Height = 232
         Columns = <
           item
             Expanded = False
@@ -107,7 +107,7 @@ inherited FrmCadClientes: TFrmCadClientes
     end
     inherited tsCadastro: TTabSheet
       ExplicitWidth = 611
-      ExplicitHeight = 268
+      ExplicitHeight = 267
       object lblCodigo: TLabel
         Left = 20
         Top = 16
@@ -136,60 +136,12 @@ inherited FrmCadClientes: TFrmCadClientes
         Height = 15
         Caption = 'Telefone: '
       end
-      object lblEndereco: TLabel
-        Left = 217
-        Top = 74
-        Width = 55
-        Height = 15
-        Caption = 'Endere'#231'o: '
-      end
-      object lblBairro: TLabel
-        Left = 25
-        Top = 103
-        Width = 37
-        Height = 15
-        Caption = 'Bairro: '
-      end
-      object lblComplemento: TLabel
-        Left = 192
-        Top = 103
-        Width = 80
-        Height = 15
-        Caption = 'Complemento:'
-      end
-      object lblCep: TLabel
-        Left = 38
-        Top = 132
-        Width = 24
-        Height = 15
-        Caption = 'CEP:'
-      end
       object lblEmail: TLabel
         Left = 240
-        Top = 132
+        Top = 74
         Width = 32
         Height = 15
         Caption = 'Email:'
-      end
-      object lblCidade: TLabel
-        Left = 22
-        Top = 161
-        Width = 40
-        Height = 15
-        Caption = 'Cidade:'
-      end
-      object lblFaixaCep: TLabel
-        Left = 400
-        Top = 161
-        Width = 204
-        Height = 15
-        Caption = 'Faixa de CEP: 00000000 a 99999999  '
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
       end
       object dbeCodigo: TDBEdit
         Left = 66
@@ -230,66 +182,126 @@ inherited FrmCadClientes: TFrmCadClientes
         DataSource = dsDados
         TabOrder = 3
       end
-      object dbeEndereco: TDBEdit
+      object dbeEmail: TDBEdit
         Left = 277
         Top = 71
         Width = 328
         Height = 23
         Anchors = [akLeft, akTop, akRight]
-        DataField = 'Endereco'
+        DataField = 'E_mail'
         DataSource = dsDados
         TabOrder = 4
       end
-      object dbeBairro: TDBEdit
-        Left = 65
+      object gbEndereco: TGroupBox
+        Left = 3
         Top = 100
-        Width = 121
-        Height = 23
-        DataField = 'Bairro'
-        DataSource = dsDados
+        Width = 605
+        Height = 141
+        Anchors = [akLeft, akTop, akRight]
+        Caption = 'Endere'#231'o'
         TabOrder = 5
-      end
-      object dbeComplemento: TDBEdit
-        Left = 276
-        Top = 100
-        Width = 328
-        Height = 23
-        Anchors = [akLeft, akTop, akRight]
-        DataField = 'Complemento'
-        DataSource = dsDados
-        TabOrder = 6
-      end
-      object dbeCep: TDBEdit
-        Left = 65
-        Top = 129
-        Width = 121
-        Height = 23
-        DataField = 'Cep'
-        DataSource = dsDados
-        MaxLength = 8
-        TabOrder = 7
-      end
-      object dbeEmail: TDBEdit
-        Left = 276
-        Top = 129
-        Width = 328
-        Height = 23
-        Anchors = [akLeft, akTop, akRight]
-        DataField = 'E_mail'
-        DataSource = dsDados
-        TabOrder = 8
-      end
-      object dlcCidade: TDBLookupComboBox
-        Left = 65
-        Top = 159
-        Width = 329
-        Height = 23
-        DataField = 'ID_Cidade'
-        DataSource = dsDados
-        KeyField = 'ID_Cidade'
-        ListField = 'Nome'
-        ListSource = dsCidades
-        TabOrder = 9
+        DesignSize = (
+          605
+          141)
+        object lblBairro: TLabel
+          Left = 22
+          Top = 55
+          Width = 37
+          Height = 15
+          Caption = 'Bairro: '
+        end
+        object lblComplemento: TLabel
+          Left = 189
+          Top = 55
+          Width = 80
+          Height = 15
+          Caption = 'Complemento:'
+        end
+        object lblEndereco: TLabel
+          Left = 3
+          Top = 25
+          Width = 55
+          Height = 15
+          Caption = 'Endere'#231'o: '
+        end
+        object lblCep: TLabel
+          Left = 34
+          Top = 115
+          Width = 24
+          Height = 15
+          Caption = 'CEP:'
+        end
+        object lblCidade: TLabel
+          Left = 18
+          Top = 85
+          Width = 40
+          Height = 15
+          Caption = 'Cidade:'
+        end
+        object lblFaixaCep: TLabel
+          Left = 400
+          Top = 85
+          Width = 204
+          Height = 15
+          Caption = 'Faixa de CEP: 00000000 a 99999999  '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object dbeBairro: TDBEdit
+          Left = 63
+          Top = 51
+          Width = 121
+          Height = 23
+          DataField = 'Bairro'
+          DataSource = dsDados
+          TabOrder = 1
+        end
+        object dbeComplemento: TDBEdit
+          Left = 274
+          Top = 51
+          Width = 328
+          Height = 23
+          Anchors = [akLeft, akTop, akRight]
+          DataField = 'Complemento'
+          DataSource = dsDados
+          TabOrder = 2
+        end
+        object dbeEndereco: TDBEdit
+          Left = 63
+          Top = 21
+          Width = 539
+          Height = 23
+          Anchors = [akLeft, akTop, akRight]
+          DataField = 'Endereco'
+          DataSource = dsDados
+          TabOrder = 0
+        end
+        object dbeCep: TDBEdit
+          Left = 63
+          Top = 112
+          Width = 121
+          Height = 23
+          DataField = 'Cep'
+          DataSource = dsDados
+          MaxLength = 8
+          TabOrder = 4
+        end
+        object dlcCidade: TDBLookupComboBox
+          Left = 63
+          Top = 81
+          Width = 329
+          Height = 23
+          DataField = 'ID_Cidade'
+          DataSource = dsDados
+          KeyField = 'ID_Cidade'
+          ListField = 'Nome'
+          ListSource = dsCidades
+          TabOrder = 3
+        end
       end
     end
   end
@@ -322,28 +334,29 @@ inherited FrmCadClientes: TFrmCadClientes
     end
     object qryDadosNome: TStringField
       FieldName = 'Nome'
-      Size = 150
+      Size = 50
     end
     object qryDadosTelefone: TStringField
       FieldName = 'Telefone'
+      Size = 14
     end
     object qryDadosEndereco: TStringField
       DisplayLabel = 'Endere'#231'o'
       FieldName = 'Endereco'
-      Size = 150
+      Size = 50
     end
     object qryDadosBairro: TStringField
       FieldName = 'Bairro'
-      Size = 100
+      Size = 30
     end
     object qryDadosComplemento: TStringField
       FieldName = 'Complemento'
-      Size = 100
+      Size = 50
     end
     object qryDadosE_mail: TStringField
       DisplayLabel = 'Email'
       FieldName = 'E_mail'
-      Size = 150
+      Size = 50
     end
     object qryDadosCep: TIntegerField
       FieldName = 'Cep'
@@ -361,7 +374,7 @@ inherited FrmCadClientes: TFrmCadClientes
       FieldKind = fkCalculated
       FieldName = 'NOME_CIDADE'
       ProviderFlags = []
-      Size = 100
+      Size = 50
       Calculated = True
     end
   end

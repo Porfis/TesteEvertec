@@ -1,4 +1,4 @@
-USE TesteEvertec;
+USE TesteEvertecNew;
 GO
 
 ALTER TABLE dbo.CLIENTES

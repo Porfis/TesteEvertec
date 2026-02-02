@@ -1,4 +1,4 @@
-USE TesteEvertec;
+USE TesteEvertecNew;
 GO
 
 CREATE INDEX IX_CLIENTES_NOME

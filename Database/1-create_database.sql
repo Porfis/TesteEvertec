@@ -1,2 +1,2 @@
-CREATE DATABASE TesteEvertec;
+CREATE DATABASE TesteEvertecNew;
 GO

@@ -1,10 +1,10 @@
-USE TesteEvertec;
+USE TesteEvertecNew;
 GO
 
 CREATE TABLE dbo.CIDADES (
     ID_Cidade       INT IDENTITY(1,1) NOT NULL,
     NOME            VARCHAR(50) NOT NULL,
-    UF              CHAR(2) NOT NULL,
+    ESTADO          CHAR(2) NOT NULL,
     CEP_Inicial     INT NOT NULL,
     CEP_Final       INT NOT NULL,
 
