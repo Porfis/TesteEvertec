@@ -15,9 +15,12 @@ type
     meiRelatorio: TMenuItem;
     meiRelClientes: TMenuItem;
     meiSobre: TMenuItem;
+    meiRelCidades: TMenuItem;
     procedure meiClienteClick(Sender: TObject);
     procedure meiCidadeClick(Sender: TObject);
     procedure meiRelClientesClick(Sender: TObject);
+    procedure meiSobreClick(Sender: TObject);
+    procedure meiRelCidadesClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +33,7 @@ var
 implementation
 
 uses
-  uFrmCadClientes, uFrmCadCidades, uFrmRelClientes;
+  uFrmCadClientes, uFrmCadCidades, uFrmRelClientes, uFrmSobre, uFrmRelCidades, uDMClientes;
 
 {$R *.dfm}
 
@@ -54,9 +57,34 @@ begin
     end;
 end;
 
+procedure TMain.meiRelCidadesClick(Sender: TObject);
+var
+  Frm: TFrmRelCidades;
+begin
+  Frm := TFrmRelCidades.Create(nil);
+  DMClientes := TDMClientes.Create(Self);
+
+  try
+    Frm.ExecutarRelatorio(DMClientes.qryCidades, '');
+  finally
+    Frm.Free;
+    FreeAndNil(DMClientes);
+  end;
+end;
+
 procedure TMain.meiRelClientesClick(Sender: TObject);
 begin
   with TFrmRelClientes.Create(Self) do
+    try
+      ShowModal;
+    finally
+      Free;
+    end;
+end;
+
+procedure TMain.meiSobreClick(Sender: TObject);
+begin
+  with TFrmSobre.Create(Self) do
     try
       ShowModal;
     finally

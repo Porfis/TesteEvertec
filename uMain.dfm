@@ -32,10 +32,14 @@ object Main: TMain
         Caption = 'Clientes'
         OnClick = meiRelClientesClick
       end
+      object meiRelCidades: TMenuItem
+        Caption = 'Cidades'
+        OnClick = meiRelCidadesClick
+      end
     end
     object meiSobre: TMenuItem
       Caption = 'Sobre'
-      Visible = False
+      OnClick = meiSobreClick
     end
   end
 end
